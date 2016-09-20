@@ -1110,8 +1110,9 @@ jQuery(document).ready(function ($) {
                 },
                 captionOn = function () {
                     var description = $('a[href="' + $('#imagelightbox').attr('src') + '"]').find('h2').html();
+                    var realizado = $('a[href="' + $('#imagelightbox').attr('src') + '"]').find('p').html();
                     if (description.length > 0)
-                        $('<div id="imagelightbox-caption"><h3>' + description + '</h3></div>').appendTo('body');
+                        $('<div id="imagelightbox-caption"><h3>' + description + '</h3><p>' + realizado + '</p></div>').appendTo('body');
                 },
                 captionOff = function () {
                     $('#imagelightbox-caption').remove();

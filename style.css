@@ -3801,8 +3801,12 @@ footer .row-content.buffer {
 
 #imagelightbox-caption h3 {
     margin-top: 0.67em;
+    margin-bottom: 0;
 }
-
+#imagelightbox-caption p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
 #imagelightbox-close i {
     position: fixed;
     top: 1.5em;
@@ -5176,15 +5180,6 @@ footer .row-content.buffer {
     Released by Jerry Jäppinen under the MIT license
     http://eiskis.net/layers
     2013-10-25 14:56 Europe/Helsinki
-----------------------------------------------------------------*/
-
-@media handheld,only screen and (max-width:48em) {
-    .column.one,.column.two,.column.sixth,.column.three,.column.fourth,.column.four,.column.twosixths,.column.third,.column.five,.column.six,.column.half,.column.threesixths,.column.twofourths,.column.seven,.column.eight,.column.foursixths,.column.twothirds,.column.nine,.column.threefourths,.column.ten,.column.fivesixths,.column.eleven {
-        float: none !important;
-        clear: both !important;
-        margin-right: 0 !important;
-        margin-left: 0 !important;
-        width: auto !important;
     }
 }
 
