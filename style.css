@@ -5213,3 +5213,9 @@ ICONOS DE STACK DE APLICACIONES USADAS
 .stack li img {
     width: 22px;
 }
+.name {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+}

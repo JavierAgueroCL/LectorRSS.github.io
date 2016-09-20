@@ -9,6 +9,7 @@ jQuery(document).ready(function ($) {
 
     /* Define some vars */
 
+
     var win = $(window),
         body = $('body'),
         header = $('header'),
@@ -29,6 +30,11 @@ jQuery(document).ready(function ($) {
 
 
     /* Determine viewport width matching with media queries */
+
+    
+    
+
+    
 
     function viewport() {
 
