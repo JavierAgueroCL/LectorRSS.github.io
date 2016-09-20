@@ -3802,10 +3802,13 @@ footer .row-content.buffer {
 #imagelightbox-caption h3 {
     margin-top: 0.67em;
     margin-bottom: 0;
+    font-size: 16px;
+
 }
 #imagelightbox-caption p {
     margin-bottom: 0px;
     margin-top: 0px;
+    font-size: 14px;
 }
 #imagelightbox-close i {
     position: fixed;
@@ -5189,4 +5192,24 @@ footer .row-content.buffer {
         -webkit-text-size-adjust: none;
     }
 }
-      
+
+/*
+ICONOS DE STACK DE APLICACIONES USADAS
+ */
+.stack {
+    display: none;
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 9px;
+}
+.stack li {
+    display: inline-block;
+    margin-bottom: -7px;
+}
+.stack li:nth-child(1){
+    font-size: 13px;
+    font-weight: bold;
+}
+.stack li img {
+    width: 22px;
+}
