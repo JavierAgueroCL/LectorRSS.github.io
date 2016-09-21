@@ -1,4 +1,5 @@
 IDA
+- Sodimac
 - VTR Corporativo
 - Dulce Receta
 - Hildebrandt
