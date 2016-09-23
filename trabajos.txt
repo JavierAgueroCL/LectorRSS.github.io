@@ -15,7 +15,7 @@ Launcher
 - MOP
 - Kooga
 
-Personales
+Personsales
 - World Mu Online
 - Hostingmania
 - Xentar
@@ -34,7 +34,6 @@ Digital Marketing
 
 Colmillo
 - Spazzio
-- Sodimac
 - SanPablo
 - MuebleCenter
 - BSoft

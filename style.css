@@ -5219,3 +5219,7 @@ ICONOS DE STACK DE APLICACIONES USADAS
     display: block;
     font-size: 14px;
 }
+.ver-proyecto {
+    cursor: hand;
+    cursor: pointer;
+}

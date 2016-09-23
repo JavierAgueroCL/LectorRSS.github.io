@@ -2048,6 +2048,12 @@ jQuery(document).ready(function ($) {
         players: ['www.youtube.com', 'player.vimeo.com']
     });
 
+    $(".ver-proyecto").on('click', function(event) {
+        event.PreventDefault;
+        var url = $(this).data("url");
+        alert(url);
+    })
+
 
 
 });
