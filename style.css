@@ -288,7 +288,6 @@ header {
     top: 0;
     left: 0;
     z-index: 9;
-    padding: 0.5rem 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.97);
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
@@ -5222,4 +5221,142 @@ ICONOS DE STACK DE APLICACIONES USADAS
 .ver-proyecto {
     cursor: hand;
     cursor: pointer;
+}
+header {
+    position: relative !important;
+    margin-bottom: 00px;
+}
+main {
+    margin-top: 0px !important;
+}
+.top-header {
+    background-color: #444 !important;
+    min-height: 43px;
+}
+.header-container {
+    background-image: url(http://el.javier.pro/wp-content/uploads/2016/10/xjavier.jpg.pagespeed.ic.tqHfU3zDRb.webp);
+    min-height: 260px;
+}
+.menu {
+    background-color: #444 !important;
+    min-height: 47px;
+    clear: inherit;
+}
+#fix_padding {
+    padding-top: 0.8% !important;
+}
+.menu ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    max-width: 1230px;
+    clear: none;
+}
+.menu ul li {
+    float: left;
+    clear: none;
+    border-left: #232323 1px solid;
+    border-right: #535353 1px solid;
+    border-color: #222222;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 0 0 1px;
+}
+
+.menu ul li a {
+    font-family:Roboto, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    font-weight: normal;
+    line-height: 47px;
+    padding: 0 15px;
+    position: relative;
+    text-decoration: none;
+    clear: none;
+    transition-delay:0s;
+    transition-duration:0.3s;
+    transition-property:all;
+    transition-timing-function:ease-in-out;
+}
+.menu ul li a:hover,
+.menu ul li a.selected {
+    background: #289dcc;
+}
+
+.fa-home{
+    color: #fff;
+    font-size: 30px;
+    padding-top: 9px;
+    height: 47px;
+    display: block;
+}
+.wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.fecha {
+    color: #fff;
+    float: left;
+    padding: 8px 0 0 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 400;
+    font-family:Roboto, sans-serif;
+    font-size: 14px;
+    background: transparent!important;
+    border-right: #535353 1px solid;
+    width: 198px;
+    min-height: 43px;
+    clear: none;
+}
+.ultima_entrada {
+    color: #fff;
+    float: left;
+    padding: 8px 0 0 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 400;
+    font-family:Roboto, sans-serif;
+    font-size: 14px;
+    background: transparent!important;
+    border-right: #535353 1px solid;
+    width: 500px;
+    min-height: 43px;
+    clear: none;
+}
+.ultima_entrada a {
+    color: #fff;
+    padding: 0 0 0 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 400;
+    font-family:Roboto, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+.social_top {
+    float: right;
+}
+.social_top ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    max-width: 1230px;
+    clear: none;
+            margin-top: -40px;
+}
+.social_top ul li {
+    float: left;
+    clear: none;
+
+}
+.social_top ul li a{
+    color: #fff;
+        padding: 10px 15px;
+    border-left: #232323 1px solid;
+    position: relative;
 }

@@ -8,9 +8,10 @@
 		<style type="text/css">@-ms-viewport{width: device-width;}</style>
 		<title>Javier Aguero - Portafolio</title>
 		<link rel="stylesheet" href="css/layers.min.css" media="screen">
-		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen"> 
 		<link rel="stylesheet" href="style.css" media="screen">
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
@@ -23,45 +24,45 @@
 
 	<body class="portfolio">
 
-		<header role="banner" class="transparent light">
-			<div class="row">
-				<div class="nav-inner row-content buffer-left buffer-right even clear-after">
-					<div id="brand">
-						<h1 class="reset"><!--<img src="img/logo.png" alt="logo">--><a href="index.html">Javier Aguero</a></h1>
-					</div><!-- brand -->
-					<a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
-					<nav>
-						<ul class="reset" role="navigation">
-							<li class="menu-item">
-								<a href="http://el.javier.pro/">Inicio</a>
-							</li>
-							<li class="menu-item">
-								<a href="http://el.javier.pro/">Blog</a>
-							</li>
-							<li class="menu-item">
-								<a href="blog-4-columns-masonry.html">Portafolio</a>
-							</li>
-						
-							<li class="menu-item"><a href="http://el.javier.pro/contacto/">Contacto</a></li>
+		<header role="banner">
+			<div class="top-header">
+				<div class="wrapper">
+					<div class="fecha"></div>
+					<div class="ultima_entrada">Ultima Entrada
+						<a href=""></a>
+					</div>
+					<div class="social_top">
+						<ul>
+							<li><a target='_blank' href="https://github.com/LectorRSS/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+							<li><a target='_blank' href="https://twitter.com/LectorRSS/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a target='_blank' href="https://www.facebook.com/search.htmx/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+							<li><a target='_blank' href="https://instagram.com/LectorRSS/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a target='_blank' href="https://www.pinterest.com/LectorRSS/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+							<li><a target='_blank' href="https://www.linkedin.com/in/javier-ag%C3%BCero-497a3757/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a target='_blank' href="https://plus.google.com/u/0/+JavierAguero/"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></li>
 						</ul>
-					</nav>
-				</div><!-- row-content -->	
-			</div><!-- row -->	
+					</div>
+				</div>
+			</div>
+			<div class="header-container"></div>
+			<div class="menu">
+				<ul>
+					<li><a href="http://el.javier.pro/"><i class="fa fa-home"></i></a></li>
+					<li><a href="http://el.javier.pro/categoria/desarrollo/">Desarrollo</a></li>
+					<li><a href="http://el.javier.pro/categoria/wordpress/">Wordpress</a></li>
+					<li><a href="http://el.javier.pro/categoria/marketing-digital/">Marketing Digital</a></li>
+					<li><a href="http://el.javier.pro/categoria/datos-linux/">Datos Linux</a></li>
+					<li><a href="http://el.javier.pro/categoria/servidores-web/">Servidores Web</a></li>
+					<li><a href="http://el.javier.pro/categoria/off-topic/">Off-Topic</a></li>
+					<li><a href="http://lectorrss.github.io/" class="selected">Portafolio</a></li>
+				</ul>
+			</div>
 		</header>
 
 		<main role="main">
-			<div id="intro-wrap" data-height="16.667">
-				<div id="intro" class="preload darken">					
-					<div class="intro-item" style="background-image: url(img/xjavier.jpg);">
-						<div class="caption">
-							<h2>Portafolio</h2>
-						</div><!-- caption -->					
-					</div>								
-				</div><!-- intro -->
-			</div><!-- intro-wrap -->
 
 			<div id="main" class="row">
-				<div class="row-content buffer clear-after">
+				<div class="row-content buffer clear-after" id="fix_padding">
 					<ul class="inline cats filter-options">
 						<li data-group="todos">Todos</li>
 						<li data-group="wordpress">Wordpress</li>
@@ -936,8 +937,8 @@
 			</div><!-- row -->	
 		</footer>
 
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
+		<script src="https://code.jquery.com/jquery.js"></script>	
+		<script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/beetle.js"></script>
 
