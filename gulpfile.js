@@ -3,7 +3,9 @@ var gulp = require('gulp'),
     Builder = require('systemjs-builder'),
     runSequence = require('run-sequence'),
     htmlMinifier = require('html-minifier'),
+    browserSync = require('browser-sync').create(),
     inlineNg2Template = require('gulp-inline-ng2-template'),
+    sass = require('gulp-sass'),
     plugins = require('gulp-load-plugins')({
         lazy: true
     });
@@ -30,7 +32,7 @@ var paths = {
     ],
     prod: 'dist/prod/',
     dev: 'dist/dev/',
-    tmp: 'dist/tmp/'
+    tmp: 'dist/tmp/'    
 };
 
 function minifyTemplate(path, ext, file, cb) {
@@ -128,7 +130,7 @@ gulp.task('serve:prod', function(done) {
 });
 
 gulp.task('build:dev', function(done) {
-    runSequence('clean:dev', 'tsc', 'copy:assets', done);
+    runSequence('clean:dev', 'tsc', 'styles', 'libs','libs_copy', 'copy:assets', done);
 });
 
 gulp.task('serve:dev', function(done) {
@@ -145,15 +147,57 @@ gulp.task('connect:prod', function() {
 });
 
 gulp.task('connect:dev', function() {
+    /*
     plugins.connect.server({
         root: [paths.dev, './'],
         port: 3000,
         livereload: true,
         fallback: paths.dev + '/index.html'
     });
+    */
+    browserSync.init({
+        server: paths.dev
+    });
+
+});
+
+gulp.task('styles', function() {
+    gulp.src('src/css/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('dist/dev/css/'))
+});
+
+gulp.task('libs_copy', function() {
+   //gulp.src('./node_modules/jquery/dist/jquery.js').pipe(gulp.dest(paths.dev + '/libs'));
+   //gulp.src('./node_modules/bootstrap/dist/js/bootstrap.js').pipe(gulp.dest(paths.dev + '/libs'));
+   //gulp.src('./node_modules/core-js/client/shim.min.js').pipe(gulp.dest(paths.dev + '/libs'));
+   //gulp.src('./node_modules/zone.js/dist/zone.js').pipe(gulp.dest(paths.dev + '/libs'));
+   //gulp.src('./node_modules/reflect-metadata/Reflect.js').pipe(gulp.dest(paths.dev + '/libs'));
+   //gulp.src('./node_modules/systemjs/dist/system.src.js').pipe(gulp.dest(paths.dev + '/libs'));
+   gulp.src('./node_modules/bootstrap/dist/css/bootstrap.css').pipe(gulp.dest(paths.dev + '/css'));
+});
+
+gulp.task("libs", () => {
+    return gulp.src([
+            'bootstrap/dist/js/bootstrap.js',
+            'jquery/dist/jquery.js',
+            'core-js/client/shim.min.js',
+            'systemjs/dist/system-polyfills.js',
+            'systemjs/dist/system.src.js',
+            'reflect-metadata/Reflect.js',
+            'rxjs/**',
+            'zone.js/dist/**',
+            '@angular/**'
+        ], {cwd: "node_modules/**"}) /* Glob required here. */
+        .pipe(gulp.dest("dist/dev/libs"));
 });
 
 gulp.task("watch", function () {
     gulp.watch(['src/**/*.ts'], ['tsc']);
-    gulp.watch(['src/**/*.html', 'src/**/*.css',  'src/**/*.js'], ['copy:assets']);
+    gulp.watch('src/css/*.scss',['styles']);
+    gulp.watch('src/**/*.html', ['copy:assets']);
+
+    //RECARGA AL CREAR LOS BUILD DE CADA CAMBIO
+    gulp.watch("dist/dev/css/*.css").on('change', browserSync.reload);
+    gulp.watch("dist/dev/app/*.js").on('change', browserSync.reload);
 });
