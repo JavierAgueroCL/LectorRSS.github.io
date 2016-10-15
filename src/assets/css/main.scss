@@ -1,0 +1,53 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+//@import "font-awesome-compass";
+//@import "font-awesome";
+
+
+/**
+	CSS PERSONALIZADO
+**/
+.header {
+	background-image: url("../images/header.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left top;
+	min-height: 260px;
+	width: 100%;
+	background-size: cover;
+}
+.top-header-section {
+    background: #444444;
+
+    .header-text {
+		line-height: 40px;
+    	padding: 0 18px;
+    	font-family: Roboto, sans-serif;
+		font-size: 14px;
+		color: #fff;
+	}
+	.fecha {
+		border-right: #535353 1px solid;
+	}
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 1230px;
+}
+
+.atencion {
+  animation: atencion_4210 3s ease-in infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes atencion_4210 {
+ 0% { transform:translate(0,0) }
+  4.41177% { transform:translate(5px,0) }
+  8.82353% { transform:translate(0,0) }
+  13.23529% { transform:translate(5px,0) }
+  17.64706% { transform:translate(0,0) }
+  22.05882% { transform:translate(5px,0) }
+  26.47059% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}

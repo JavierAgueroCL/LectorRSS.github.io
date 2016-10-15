@@ -1,27 +1,30 @@
-import {NgModule} from '@angular/core';
+import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {HttpModule, JsonpModule} from '@angular/http';
 
-import {AppComponent} from './app.component';
+import {AppComponent} from "./app.component";
+import {TaskListComponent} from "./todo/components/task-list.component";
+import {AboutComponent} from "./about/components/about.component";
+import {TaskComponent} from "./todo/components/task.component";
+
 import {routing, appRoutingProviders} from './app.routing';
-import {HomeComponent} from './home/home.component';
-import {AboutComponent} from './about/about.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HomeComponent,
-        AboutComponent
-    ],
     imports: [
         BrowserModule,
-        HttpModule,
-        JsonpModule,
+        FormsModule,
         routing
     ],
-    providers: [appRoutingProviders],
+    declarations: [
+        AppComponent,
+        TaskComponent,
+        TaskListComponent,
+        AboutComponent
+    ],
+    providers: [
+        appRoutingProviders
+    ],
     bootstrap: [AppComponent]
 })
-
 export class AppModule {
 }

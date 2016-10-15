@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "outDir": "build/app",
     "target": "es5",
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "rootDir": "./src",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "typeRoots": [ "./node_modules/@types" ],
-    "types": [ "jasmine", "node", "core-js", "protractor"]
+    "removeComments": false,
+    "noImplicitAny": false
   },
   "exclude": [
+    "gulpfile.ts",
     "node_modules"
   ]
 }

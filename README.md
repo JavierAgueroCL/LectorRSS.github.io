@@ -1,30 +1,56 @@
-## Codigo Portafolio "Javier Aguero"
-> version 0.10.1.
+Portafolio "Javier Aguero" en Angular2 con TypeScript, SASS y Gulp
+=================================
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://opensource.org/licenses/MIT)
+#### 1. Prerequisitos
 
-## Instalación
+*nodejs* debe estar instalado y la ionstalacion global de los siguientes paquetes NPM:
 
-```bash
-$ npm install -g typescript
-$ npm start
-```
+- gulp
 
-## Construccion de Produccion
-```bash
-$ npm run build
-```
+> npm i -g gulp
 
-## Correr pruebas
-```bash
-$ npm test
-```
+- gulp-cli
 
-## Correr pruebas End-to-End 
-```bash
-# make sure you have a running app
-$ npm run e2e
-```
+> npm i -g gulp-cli
 
-## Licencia
-<a href="https://opensource.org/licenses/MIT">MIT License</a>
+- typings
+
+> npm i -g typings@1.3.3
+
+- typescript
+
+> npm i -g typescript@2.0.2
+
+- ts-node
+
+> npm i -g ts-node@1.3.0
+
+#### 2. Clona el Repositorio
+
+
+> git clone https://github.com/LectorRSS/LectorRSS.github.io.git
+
+
+#### 3. Instala las dependencias
+
+Instala las dependencias del package.json con el siguiente comando
+
+> npm install
+
+Los directorios `node_modules` y `typings` seran creados durante la instalacion.
+
+#### 4. Construir el Proyecto
+
+Construye el Proyecto
+
+> npm run clean & npm run build
+
+El directorio `build` sera creado durante la construccion
+
+#### 5. Inicia la aplicacion
+
+Inicia la aplicacion con el siguiente comando
+
+> npm start
+
+La aplicacion sera mostrada en el navegador automaticamente en http://localhost:8000/
