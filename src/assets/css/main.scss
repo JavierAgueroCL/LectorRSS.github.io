@@ -33,7 +33,7 @@
 .wrapper {
     margin: 0 auto;
     padding: 0 30px;
-    width: 1230px;
+    max-width: 1230px;
 }
 
 .atencion {
@@ -50,4 +50,24 @@
   22.05882% { transform:translate(5px,0) }
   26.47059% { transform:translate(0,0) }
   100% { transform:translate(0,0) }
+}
+
+nav.menu {
+	margin-top: -10px;
+    margin-bottom: 34px;
+}
+
+.titulo {
+	h1 {
+	    color: #fff;
+	    font-size: 66px;
+	    margin-bottom: 0px;
+	    margin-top: 56px;
+	}
+	h2 {
+	    color: #fff;
+		font-size: 33px;
+		margin-bottom: 0px;
+		margin-top: -11px;
+	}
 }
