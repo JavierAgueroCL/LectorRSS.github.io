@@ -18,7 +18,8 @@ System.register(["@angular/router", "./portafolio.component", "./proyecto.compon
             appRoutes = [
                 { path: '', redirectTo: 'portafolio', pathMatch: 'full' },
                 { path: 'portafolio', component: portafolio_component_1.PortafolioComponent, data: { title: 'Portafolio' } },
-                { path: 'proyecto', component: proyecto_component_1.ProyectoComponent, data: { title: 'About' } }
+                { path: 'sodimac', component: proyecto_component_1.ProyectoComponent, data: { title: 'Sodimac' } },
+                { path: 'vtr', component: proyecto_component_1.ProyectoComponent, data: { title: 'VTR' } }
             ];
             exports_1("appRoutingProviders", appRoutingProviders = []);
             exports_1("routing", routing = router_1.RouterModule.forRoot(appRoutes, { useHash: true }));

@@ -21,6 +21,8 @@ System.register(["@angular/core"], function(exports_1, context_1) {
             ProyectoComponent = (function () {
                 function ProyectoComponent() {
                 }
+                ProyectoComponent.prototype.ngOnInit = function () {
+                };
                 ProyectoComponent = __decorate([
                     core_1.Component({
                         selector: 'task-list',

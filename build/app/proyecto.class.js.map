@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/proyecto.class.ts"],"names":[],"mappings":";;;;;;;YAAA;gBAAA;gBAKA,CAAC;gBAAD,eAAC;YAAD,CALA,AAKC,IAAA;YALD,+BAKC,CAAA","file":"proyecto.class.js","sourcesContent":["export class Proyecto {\r\n  id: number;\r\n  nombre: string;\r\n  imagen: string;\r\n  ruta: string;\r\n}"],"sourceRoot":"/src"}

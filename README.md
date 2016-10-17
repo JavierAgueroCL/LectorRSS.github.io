@@ -3,7 +3,7 @@ Portafolio "Javier Aguero" en Angular2 con TypeScript, SASS y Gulp
 
 #### 1. Prerequisitos
 
-*nodejs* debe estar instalado y la ionstalacion global de los siguientes paquetes NPM:
+*nodejs* debe estar instalado y la instalacion global de los siguientes paquetes NPM:
 
 - gulp
 

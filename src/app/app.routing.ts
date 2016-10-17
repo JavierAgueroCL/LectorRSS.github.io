@@ -6,7 +6,8 @@ import {ModuleWithProviders} from "@angular/core";
 const appRoutes: Routes = [
     {path: '', redirectTo: 'portafolio', pathMatch: 'full'},
     {path: 'portafolio', component: PortafolioComponent, data: {title: 'Portafolio'}},
-    {path: 'proyecto', component: ProyectoComponent, data: {title: 'About'}}
+    {path: 'sodimac', component: ProyectoComponent, data: {title: 'Sodimac'}},
+    {path: 'vtr', component: ProyectoComponent, data: {title: 'VTR'}}
 ];
 
 export const appRoutingProviders: any[] = [];

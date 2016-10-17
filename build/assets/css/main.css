@@ -5843,27 +5843,13 @@ button.close {
   padding: 0 30px;
   max-width: 1230px; }
 
-.atencion {
-  animation: atencion_4210 3s ease-in infinite;
-  transform-origin: 50% 50%; }
+.botonera a {
+  max-width: 80%;
+  display: inline-block; }
 
-@keyframes atencion_4210 {
-  0% {
-    transform: translate(0, 0); }
-  4.41177% {
-    transform: translate(5px, 0); }
-  8.82353% {
-    transform: translate(0, 0); }
-  13.23529% {
-    transform: translate(5px, 0); }
-  17.64706% {
-    transform: translate(0, 0); }
-  22.05882% {
-    transform: translate(5px, 0); }
-  26.47059% {
-    transform: translate(0, 0); }
-  100% {
-    transform: translate(0, 0); } }
+.atencion {
+  animation: click_aqui 3s ease-in infinite;
+  transform-origin: 50% 50%; }
 
 nav.menu {
   margin-top: -10px;
@@ -5880,3 +5866,79 @@ nav.menu {
   font-size: 33px;
   margin-bottom: 0px;
   margin-top: -11px; }
+
+.proyect-list {
+  list-style: none;
+  margin-top: 50px;
+  display: inline-block; }
+  .proyect-list li {
+    float: left;
+    margin: 0px 35px; }
+    .proyect-list li a {
+      display: block;
+      border-radius: 6px;
+      text-decoration: none; }
+      .proyect-list li a img {
+        max-width: 230px;
+        max-height: 197px; }
+      .proyect-list li a p {
+        text-align: center;
+        margin: 7px 0px; }
+      .proyect-list li a:hover {
+        animation: rebote 2s ease-out infinite;
+        transform-origin: 50% 50%; }
+
+.loading {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10%; }
+
+.spacer {
+  margin-top: 20px; }
+
+.footer {
+  background: #444444;
+  min-height: 50px; }
+  .footer .codigo a {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+@keyframes rebote {
+  0% {
+    transform: scale(1); }
+  8.33333% {
+    transform: scale(0.9) rotate(-5deg); }
+  16.66667% {
+    transform: scale(0.9) rotate(-5deg); }
+  25% {
+    transform: scale(1.1) rotate(5deg); }
+  33.33333% {
+    transform: scale(1.1) rotate(-5deg); }
+  41.66667% {
+    transform: scale(1.1) rotate(5deg); }
+  50% {
+    transform: scale(1.1) rotate(-5deg); }
+  58.33333% {
+    transform: scale(1.1) rotate(5deg); }
+  66.66667% {
+    transform: scale(1) rotate(0); }
+  100% {
+    transform: scale(1) rotate(0); } }
+
+@keyframes click_aqui {
+  0% {
+    transform: translate(0, 0); }
+  4.41177% {
+    transform: translate(5px, 0); }
+  8.82353% {
+    transform: translate(0, 0); }
+  13.23529% {
+    transform: translate(5px, 0); }
+  17.64706% {
+    transform: translate(0, 0); }
+  22.05882% {
+    transform: translate(5px, 0); }
+  26.47059% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, 0); } }
