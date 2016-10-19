@@ -4,7 +4,7 @@ import {OnInit} from "@angular/core";
 
 
 @Component({
-    selector: 'task-list',
+    selector: 'proyecto',
     template: `
     <main class="wrapper">
 		ACerca de 

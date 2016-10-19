@@ -5903,6 +5903,17 @@ nav.menu {
     margin-top: 50px;
     margin-bottom: 50px; }
 
+.proyecto {
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.9);
+  top: 0;
+  width: 65%;
+  right: 0;
+  box-shadow: 3px 0px 21px 7px #000000;
+  padding: 12px 20px; }
+
 @keyframes rebote {
   0% {
     transform: scale(1); }

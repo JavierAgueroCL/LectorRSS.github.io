@@ -25,7 +25,7 @@ System.register(["@angular/core"], function(exports_1, context_1) {
                 };
                 ProyectoComponent = __decorate([
                     core_1.Component({
-                        selector: 'task-list',
+                        selector: 'proyecto',
                         template: "\n    <main class=\"wrapper\">\n\t\tACerca de \n\t</main>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
