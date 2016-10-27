@@ -5914,6 +5914,23 @@ nav.menu {
   box-shadow: 3px 0px 21px 7px #000000;
   padding: 12px 20px; }
 
+.alerta {
+  text-align: center;
+  display: block;
+  clear: both;
+  background: rgba(255, 0, 0, 0.35);
+  min-height: 100px;
+  top: 0;
+  position: relative; }
+  .alerta a {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px; }
+  .alerta h3 {
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px; }
+
 @keyframes rebote {
   0% {
     transform: scale(1); }

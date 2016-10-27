@@ -26,7 +26,7 @@ System.register(["@angular/core"], function(exports_1, context_1) {
                 ProyectoComponent = __decorate([
                     core_1.Component({
                         selector: 'proyecto',
-                        template: "\n    <main class=\"wrapper\">\n\t\tACerca de \n\t</main>\n    "
+                        template: "\n    <main class=\"wrapper\">\n\t\tInformacion del Proyecto\n\t</main>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ProyectoComponent);

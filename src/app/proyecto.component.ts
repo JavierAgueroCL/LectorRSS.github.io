@@ -7,7 +7,7 @@ import {OnInit} from "@angular/core";
     selector: 'proyecto',
     template: `
     <main class="wrapper">
-		ACerca de 
+		Informacion del Proyecto
 	</main>
     `
 })

@@ -126,6 +126,28 @@ nav.menu {
 	//display: none;
 }
 
+.alerta {
+    text-align: center;
+    display: block;
+    clear: both;
+    background: rgba(255, 0, 0, 0.35);
+    min-height: 100px;
+    top: 0;
+    position: relative;
+
+    a {
+    	margin: 0 auto;
+    	width: 100%;
+    	max-width: 300px;
+    }
+
+    h3 {
+    		padding-top: 10px;
+    	margin-top: 0px;
+    	margin-bottom: 10px;
+    }
+}
+
 @keyframes rebote {
   0% {  transform: scale(1) }
   8.33333% {  transform:scale(.9) rotate(-5deg) }
